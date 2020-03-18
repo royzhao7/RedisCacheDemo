@@ -1,0 +1,18 @@
+﻿@{
+    //ViewBag.Title = "Home Page";
+    Layout = null;
+}
+@using RedisCacheDemo.Models;
+@{ 
+    Book book= (Book)ViewData["book"];
+}
+<div>
+    <h1>
+        @ViewData["key"]
+    </h1>
+    <h1>
+        @book.isbs<br/>
+        @book.name<br />
+        @book.price
+    </h1>
+</div>
